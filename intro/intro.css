@@ -3,52 +3,46 @@ body {
   padding: 0;
   background-color: rgb(11, 11, 66);
 }
-
-.img {
-  display: flex;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.img img {
-  width: 4em;
-  height: 4em;
-  margin-right: 0.9em;
-}
-
-.img2 {
-  width: 20em;
-  height: 20em;
-  opacity: 0.5;
-}
-
 .container-fluid {
   color: white;
   background-color: rgb(11, 11, 66);
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
+  height: 110vh;
   justify-content: center;
 }
 
 .container {
+  display: flex;
   padding: 0;
   background-color: white;
   color: black;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 91.9vh;
+  height: 110vh;
 }
-
+.img {
+  display: flex;
+}
+.img img {
+  width: 4em;
+  height: 4em;
+  margin-right: 0.9em;
+}
+.img2 {
+  width: 20em;
+  height: 20em;
+  opacity: 0.5;
+      margin-left: 70px;
+    margin-top: 50px;
+}
 .left {
   padding-top: 3.5em;
   background-color: #fffcf9;
-  text-align: center;
+  
   padding-left: 3em;
   border-top-left-radius: 20px;
-  border-right: 6px solid darkblue;
+  border-right: 6px solid rgb(112, 112, 112);
 }
 
 .Q {
@@ -60,87 +54,115 @@ h2 {
 .Q:hover {
   border-top: 2px solid darkgray;
 }
-
-/* Right part styles */
+/* the right css */
 .right {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  overflow-y: auto;
-  font-size: 1em;
-
   background-color: #ffffff;
-  text-align: center;
-  padding-left: 3em;
-  border-top-left-radius: 20px;
+ 
+ 
 }
 
-#instruction {
-  text-align: center;
-  font-family: sans-serif;
-  margin-bottom: 20px;
-  position:relative;
-  right:50px;
-  left:50px;
+.right h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
 }
 
 #read {
-  color: red;
-  margin-bottom: 15px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-/* Styles for the status table */
+.right instructions {
+  background-color: white;
+  padding: 20px;
+  
+}
+
+.instructions ol {
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.instructions li:last-child {
+  margin-bottom: 0;
+}
+
 .status-table {
   width: 100%;
+  max-width: 400px;
+  margin: 15px 0;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
+.status-table tr {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.status-table tr:last-child {
+  border-bottom: none;
+}
 
 .status-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
+  padding: 8px 5px;
   vertical-align: middle;
 }
 
 .color-box {
+  display: inline-block;
   width: 20px;
   height: 20px;
-  display: inline-block;
-  border: 1px solid black;
-  vertical-align: middle;
+  border-radius: 3px;
   margin-right: 10px;
 }
 
 .red-box {
-  background-color: red;
-  border-radius: 50px;
+  background-color: #e74c3c;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
 .green-box {
-  background-color: green;
-  border-radius: 50px;
+  background-color: #2ecc71;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
 .yellow-box {
-  background-color: yellow;
-  border-radius: 50px;
+  background-color: #f39c12;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
 .blue-box {
-  background-color: blue;
-  border-radius: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
-.btn{
- 
-  margin: 20px auto;
-  display: block;
-  width: 200px;
+.text-center{
+  margin: 0;
 }
+.btn{
+display: block;
+  width: 200px;
+    margin: 10px auto;
+}
+
+
+
