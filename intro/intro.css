@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(11, 11, 66);
+}
+
+.img {
+  display: flex;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.img img {
+  width: 4em;
+  height: 4em;
+  margin-right: 0.9em;
+}
+
+.img2 {
+  width: 20em;
+  height: 20em;
+  opacity: 0.5;
+}
+
+.container-fluid {
+  color: white;
+  background-color: rgb(11, 11, 66);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  padding: 0;
+  background-color: white;
+  color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 91.9vh;
+}
+
+.left {
+  padding-top: 3.5em;
+  background-color: #fffcf9;
+  text-align: center;
+  padding-left: 3em;
+  border-top-left-radius: 20px;
+  border-right: 6px solid darkblue;
+}
+
+.Q {
+  display: inline-block;
+  margin: 2em;
+  color: rgb(79, 79, 79);
+}
+
+.Q:hover {
+  border-top: 2px solid darkgray;
+}
+
+/* Right part styles */
+.right {
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 1em;
+
+  background-color: #ffffff;
+  text-align: center;
+  padding-left: 3em;
+  border-top-left-radius: 20px;
+}
+
+#instruction {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  position:relative;
+  right:50px;
+  left:50px;
+}
+
+#read {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Styles for the status table */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+.status-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.red-box {
+  background-color: red;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.green-box {
+  background-color: green;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.yellow-box {
+  background-color: yellow;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.blue-box {
+  background-color: blue;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+.btn{
+ 
+  margin: 20px auto;
+  display: block;
+  width: 200px;
+}
