@@ -4,6 +4,10 @@ body {
   background-color: rgb(11, 11, 66);
 }
 
+.align{
+  text-align: justify;
+}
+
 .img {
   display: flex;
 }
@@ -80,6 +84,7 @@ h2 {
   position:relative;
   right:50px;
   left:50px;
+  font-weight: bold;
 }
 
 #read {
