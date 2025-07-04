@@ -6,7 +6,7 @@ body {
 }
 .container-fluid {
   color: white;
-  background-color: rgb(11, 11, 66);
+  background-color: #0b0b42;
   width: 100vw;
   max-height: 100vh;
   height: 110vh;
