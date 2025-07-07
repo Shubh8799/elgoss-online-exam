@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "Question": "What is 2+2?",
+    "option1": "4",
+    "option2": "5",
+    "option3": "6",
+    "option4": "0",
+    "answer": "4"
+  },
+  {
+    "id": 2,
+    "Question": "Which of the following does not belong: apple, banana, chair, orange?",
+    "option1": "apple",
+    "option2": "banana",
+    "option3": "chair",
+    "option4": "orange",
+    "answer": "chair"
+  },
+  {
+    "id": 3,
+    "Question": "If all 'flumphs' are 'glerbs' and some 'glerbs' are 'zoodles', can we conclude that some 'flumphs' are 'zoodles'?",
+    "option1": "Yes",
+    "option2": "No",
+    "option3": "Only if they are green",
+    "option4": "Insufficient information",
+    "answer": "Insufficient information"
+  },
+  {
+    "id": 4,
+    "Question": "Complete the sequence: 1, 4, 9, 16, ___",
+    "option1": "20",
+    "option2": "25",
+    "option3": "36",
+    "option4": "49",
+    "answer": "25"
+  },
+  {
+    "id": 5,
+    "Question": "Which number comes next in the series: 2, 4, 8, 16, ___?",
+    "option1": "20",
+    "option2": "24",
+    "option3": "32",
+    "option4": "64",
+    "answer": "32"
+  },
+  {
+    "id": 6,
+    "Question": "If a BIRD is to FLY as a FISH is to ___?",
+    "option1": "WALK",
+    "option2": "SWIM",
+    "option3": "SING",
+    "option4": "CLIMB",
+    "answer": "SWIM"
+  },
+  {
+    "id": 7,
+    "Question": "Find the odd one out: Car, Bus, Bicycle, Aeroplane",
+    "option1": "Car",
+    "option2": "Bus",
+    "option3": "Bicycle",
+    "option4": "Aeroplane",
+    "answer": "Aeroplane"
+  },
+  {
+    "id": 8,
+    "Question": "What is the missing letter in the sequence: A, C, E, G, ___?",
+    "option1": "H",
+    "option2": "I",
+    "option3": "J",
+    "option4": "K",
+    "answer": "I"
+  },
+  {
+    "id": 9,
+    "Question": "A farmer has 17 sheep. All but 9 die. How many are left?",
+    "option1": "8",
+    "option2": "9",
+    "option3": "17",
+    "option4": "0",
+    "answer": "9"
+  },
+  {
+    "id": 10,
+    "Question": "If you rearrange the letters 'CIFAIPC', you would have the name of a(n):",
+    "option1": "Animal",
+    "option2": "Ocean",
+    "option3": "Country",
+    "option4": "City",
+    "answer": "Ocean"
+  },
+  {
+    "id": 11,
+    "Question": "Which of the following is the least like the others? Dog, Cat, Horse, Snake",
+    "option1": "Dog",
+    "option2": "Cat",
+    "option3": "Horse",
+    "option4": "Snake",
+    "answer": "Snake"
+  },
+  {
+    "id": 12,
+    "Question": "What number logically follows this series? 3, 5, 8, 13, 21, ___",
+    "option1": "29",
+    "option2": "34",
+    "option3": "36",
+    "option4": "42",
+    "answer": "34"
+  },
+  {
+    "id": 13,
+    "Question": "What is the capital of France?",
+    "option1": "London",
+    "option2": "Berlin",
+    "option3": "Rome",
+    "option4": "Paris",
+    "answer": "Paris"
+  },
+  {
+    "id": 14,
+    "Question": "Which of the following is a prime number?",
+    "option1": "9",
+    "option2": "15",
+    "option3": "17",
+    "option4": "21",
+    "answer": "17"
+  },
+  {
+    "id": 15,
+    "Question": "If there are 5 apples and you take away 3, how many do you have?",
+    "option1": "2",
+    "option2": "3",
+    "option3": "5",
+    "option4": "8",
+    "answer": "3"
+  },
+  {
+    "id": 16,
+    "Question": "Which word does not belong: Sad, Happy, Angry, Tree?",
+    "option1": "Sad",
+    "option2": "Happy",
+    "option3": "Angry",
+    "option4": "Tree",
+    "answer": "Tree"
+  },
+  {
+    "id": 17,
+    "Question": "What is the next shape in the sequence: Circle, Square, Triangle, Circle, Square, ___?",
+    "option1": "Circle",
+    "option2": "Square",
+    "option3": "Triangle",
+    "option4": "Rectangle",
+    "answer": "Triangle"
+  },
+  {
+    "id": 18,
+    "Question": "If a 'dog' barks, what does a 'cat' do?",
+    "option1": "Roar",
+    "option2": "Meow",
+    "option3": "Chirp",
+    "option4": "Oink",
+    "answer": "Meow"
+  },
+  {
+    "id": 19,
+    "Question": "Mary's father has five daughters – Nana, Nene, Nini, Nono. What is the fifth daughter’s name?",
+    "option1": "Nunu",
+    "option2": "Mary",
+    "option3": "Nancy",
+    "option4": "Mimi",
+    "answer": "Mary"
+  },
+  {
+    "id": 20,
+    "Question": "Which is heavier: a pound of feathers or a pound of bricks?",
+    "option1": "Feathers",
+    "option2": "Bricks",
+    "option3": "They weigh the same",
+    "option4": "Depends on the type of feathers",
+    "answer": "They weigh the same"
+  }
+]
