@@ -5,6 +5,10 @@ body {
   min-height: 100vh;
 }
 
+.align{
+  text-align: justify;
+}
+
 .main-content-container {
   background-color: white;
   color: black;
