@@ -1,3 +1,56 @@
+/* Other styles remain the same */
+
+.big-box {
+  position: relative; /* Needed for absolute positioning of children */
+  background-color: white;
+  width: 900px;
+  height: 550px;
+  margin-left: 30px;
+  color: black;
+  text-align: left;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* NEW: Style the content wrapper */
+.question-content {
+  /* This tells the content to grow and fill available space */
+  flex-grow: 1;
+  /* If content is too long, it will scroll instead of expanding the box */
+ 
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8em;
+  padding: 15px;
+  /* This ensures the button container itself does not shrink */
+  flex-shrink: 0;
+  /* margin-top is no longer needed to create space */
+   /* Optional: adds a nice separator line */
+}
+
+/* You can remove the hover effect if you wish, or keep it */
+.btns:hover {
+  border-top: 1px solid gray;
+}
+
+
+
+.next_btn {
+  border: none;
+  margin: 5px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #0000ff;
+}
+
+/* The rest of your CSS... */
 .container-fulied {
   position: fixed;
   top: 0;
@@ -19,58 +72,13 @@ input[type="radio"] {
 }
 
 .mark-checkbox {
-  margin-top: 2em;
-  margin-left: 29em;
+  position: absolute;
+  right: 30px; /* Same as big-box padding */
+  bottom: 80px; /* Position above buttons */
   font-size: 25px;
 }
 
 .mark-checkbox input[type="checkbox"] {
   transform: scale(2.5);
   margin-right: 15px;
-  font-size: 1.5em;
-}
-
-.btns {
-  margin-top: 1em;   
-  display: flex;
-  justify-content: space-evenly;
-  gap: 8em;
-  padding: 15px;
-  position: sticky;
-  flex-shrink: 0;
-}
-
-.btns:hover {
-  border-top: 1px solid gray;
-}
-
-.next_btn {
-  border: none;
-  margin: 5px;
-  width: 100px;
-  height: 50px;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #0000ff;
-}
-
-.question-container {
-  display: flex;
-  flex-direction: column;
-  height: 600px; /* or whatever fits your layout */
-  justify-content: space-between;
-}
-
-.big-box {
-  background-color: white;
-  width: 900px;
-  height: 550px;
-  margin-left: 30px;
-  color: black;
-  text-align: left;
-  padding: 30px;
-  border-radius: 10px;
-  flex: 1 1 auto;
- 
 }

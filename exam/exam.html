@@ -10,27 +10,27 @@
 <body>
   <div class="container-fulied">
     <nav class="fw-semibold fs-3">Online IQ Test</nav>
-
     <section>
       <div class="row">
         <div class="Container col-md-8 mt-5 mb-5">
           <div class="big-box">
-            <label id="question-count" class="fw-semibold fs-4">Question 1/20</label>
-            <div class="fw-normal mt-3">
-              <label class="fw-semibold fs-4">
-                <h3 id="question-text">Question:</h3>
-              </label><br>
-              <label class="fw-semibold fs-4">Options:</label><br>
-              <div id="options-container" class="radio fw-semibold fs-4">
-                <!-- Options will be inserted here by JavaScript -->
+            <div class="question-content">
+              <label id="question-count" class="fw-semibold fs-4">Question 1/20</label>
+              <div class="fw-normal mt-3">
+                <label class="fw-semibold fs-4">
+                  <h3 id="question-text">Question:</h3>
+                </label><br>
+                <label class="fw-semibold fs-4">Options:</label><br>
+                <div id="options-container" class="radio fw-semibold fs-4">
+                  </div>
+                <div class="mark-checkbox">
+                  <input type="checkbox" name="mark"> Mark
+                </div>
               </div>
-              <div class="mark-checkbox">
-                <input type="checkbox" name="mark"> Mark
-              </div>
-              <div class="btns">
-                <button id="prev-btn" type="button" class="next_btn fw-semibold fs-5"><- Prev</button>
-                <button id="next-btn" type="button" class="next_btn fw-semibold fs-5">Next -></button>
-              </div>
+            </div>
+            <div class="btns">
+              <button id="prev-btn" type="button" class="next_btn fw-semibold fs-5"><- Prev</button>
+              <button id="next-btn" type="button" class="next_btn fw-semibold fs-5">Next -></button>
             </div>
           </div>
         </div>
@@ -38,78 +38,5 @@
     </section>
   </div>
   <script src="exam.js"></script>
-  <script>
-    let questions = [];
-let currentQuestionIndex = 0;
-
-document.addEventListener("DOMContentLoaded", () => {
-    fetchQuestions();
-    
-    document.getElementById('prev-btn').addEventListener('click', showPreviousQuestion);
-    document.getElementById('next-btn').addEventListener('click', showNextQuestion);
-});
-
-function fetchQuestions() {
-    fetch("./Question.Json")
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok.");
-            }
-            return response.json();
-        })
-        .then((data) => {
-            questions = data;
-            displayQuestion(currentQuestionIndex);
-        })
-        .catch((err) => {
-            console.log("Error loading data:", err);
-            document.getElementById('question-text').textContent = "Failed to load questions.";
-        });
-}
-
-function displayQuestion(index) {
-    if (index < 0 || index >= questions.length) return;
-    
-    const question = questions[index];
-    const optionsContainer = document.getElementById('options-container');
-    
-    // Update question count
-    document.getElementById('question-count').textContent = `Question ${index + 1}/${questions.length}`;
-    
-    // Update question text
-    document.getElementById('question-text').textContent = question.question;
-    
-    // Clear previous options
-    optionsContainer.innerHTML = '';
-    
-    // Add new options with radio buttons
-    question.options.forEach((option, i) => {
-        const optionDiv = document.createElement('div');
-        optionDiv.innerHTML = `
-            <input type="radio" name="Options" id="option-${i}" value="${option}">
-            <label for="option-${i}">${option}</label><br>
-        `;
-        optionsContainer.appendChild(optionDiv);
-    });
-    
-    // Update button states
-    document.getElementById('prev-btn').disabled = index === 0;
-    document.getElementById('next-btn').disabled = index === questions.length - 1;
-}
-
-function showNextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
-        displayQuestion(currentQuestionIndex);
-    }
-}
-
-function showPreviousQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        displayQuestion(currentQuestionIndex);
-    }
-}
-  </script>
 </body>
 </html>
