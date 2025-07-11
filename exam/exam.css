@@ -1,97 +1,44 @@
-*body {
+.container-fluid{
+    background-color: navy;
+}
+.left,.right{
+    background-color:white;
+    border-radius:10px;
+    height:680px;
+    /* padding-right: 15px; */
+    /* padding: 3px; */
+}
+.right{
+    background-color:orange;
+    background-color: azure;
+    padding-left: 15px;
   
 }
-.container-fulied {
-    
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1050;
-  /* height: 790px; */
-  /* background-color: #f8f9fa; */
-  /* border: 2px solid #ccc; */
-  /* margin-top: 50px; */
-  background-color: rgb(11, 11, 66);
-  color: white;
-  border: 0px solid black;
-  padding: 20px;
-  
+#row1{
+   width:45px;
+    height:45px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-right:15px;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+   margin-left:20px;
+   background-color:lightgrey;
+} 
+.qstatus{
+    text-align: center;
+    margin-top: 20px;
+    font-style: oblique;
 }
-#first{
-
-
+.submit-btn{
+    border-radius:15px;
+    width:170px;
+   margin-left:85px;
+    background-color:green;
+    color: white;
+    height:35px;
 }
-
-.big-box {
-  background-color: white;
-  width: 900px;
-  height: 500px;
- margin-left: 30px;
- color: black;
- text-align: left;
- padding: 30px;
- border-radius: 10px;
-}
-.small-box {
-  background-color:white;
-  width: 400px;
-  height: 500px;
-  margin-left: 60px;
-  margin-right: 30px;
-  color: black;
-  text-align: center;
-  padding: 30px;
-  border-radius: 10px;
-
-}
-/* #heading{
-        font-size: large;
-    } */
-
-#timer {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1050;
-  padding: 10px;
-}
-.btn{
- 
-   
-}
-.next_btn {
-  margin-top: 300px;
-  width: 100px;
-  height: 50px;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  border: none;
-}
-.footer{
-  background-color: whitesmoke;
-  text-align: center;
-
-   
-}
-/* .ans{
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-} */
- .next_btn{
-  background-color: #0000ff;
- }
