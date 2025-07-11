@@ -1,18 +1,51 @@
 
+.container-fulied {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:azure;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+ 
+
+}
+
 .row {
   display: flex;
   flex-direction: row;
   /* Additions for centering and vertical alignment */
   align-items: center; /* Aligns items vertically in the center */
-  justify-content: space-evenly; /* Aligns items horizontally in the center */
+  justify-content: center; /* Aligns items horizontally in the center */
  /* Ensures the row takes at least the full viewport height */
+ gap: 20px;
+ 
 }
 .img img {
   width: 4em;
   height: 4em;
   object-fit: contain;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
 
+  background-color:azure;
+
+  font-family: Arial, sans-serif;
+  color: #61dafb;
+}
+
+.timer-container {
+  border-radius: 20px;
+}
+
+.timer-display {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}
 
 
 .big-box {
@@ -27,6 +60,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+   box-shadow: 5px 5px 8px lightblue;
 }
 
 .question-content {
@@ -59,16 +93,6 @@
     background-color: oklch(34.66% 0.24022 264.073);
 }
 
-.container-fulied {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(11, 11, 66);
-  color: rgb(0, 0, 0);
-  padding: 20px;
-
-}
 
 .radio {
   margin-left: 90px;
@@ -93,12 +117,14 @@ input[type="radio"] {
 }
 
 .right {
-  background-color: azure;
+  background-color: #ffffff;
   border-radius: 10px;
   /* Modified height to match .big-box */
   height: 550px;
   padding: 20px;
   width: 25%;
+ border-left: 6px solid rgb(196, 196, 196);
+  box-shadow: 5px 5px 8px lightblue;
 }
 
 .button-grid {
