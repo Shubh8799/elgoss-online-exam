@@ -14,10 +14,17 @@
      
    
     <section class="bob">
-       <div class="img d-flex align-items-center justify-content-center my-4">
-        <img src="/images/img4.png" alt="online exam logo" class="img-fluid" />
-        <h2 class="ms-3 text-white">Online IQ Test</h2>
-      </div>
+      <nav>
+        <div class="img d-flex align-items-center justify-content-center my-4">
+          <img src="/images/img4.png" alt="online exam logo" class="img-fluid" />
+          <h2 class="ms-3 text-white">Online IQ Test</h2>
+        </div>
+        <div class="timer-container">
+          <div class="timer-display">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+          </div>
+        </div>
+      </nav>
       <div class="row">
         <div class="col-md-6 mt-0 mb-5">
           <div class="big-box col-md-6 mb-8">
@@ -99,7 +106,7 @@
             </div>
           </div>
           <div class="row mt-5">
-            <button type="submit" class="submit-btn">SUBMIT TEST</button>
+            <button type="submit" class="submit-btn" id="submit">SUBMIT TEST</button>
           </div>
         </div>
       </div>
