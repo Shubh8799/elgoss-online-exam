@@ -69,3 +69,7 @@ function showPreviousQuestion() {
         displayQuestion(currentQuestionIndex);
     }
 }
+let btn=document.getElementById("submit");
+btn.onclick=()=>{
+    window.location.href="/submitted/result.html";
+}
