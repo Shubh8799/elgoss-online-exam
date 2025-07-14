@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online IQ Test</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="exam.css" />
 </head>
-
 <body>
-  <div class="container-fulied">
-    
-     
-   
+  <div class="container-fluid">
     <section class="bob">
       <nav>
-        <div class="img d-flex align-items-center justify-content-center my-4">
+        <div class="img d-flex align-items-center justify-content-center">
           <img src="/images/img4.png" alt="online exam logo" class="img-fluid" />
-          <h2 class="ms-3 text-white">Online IQ Test</h2>
+          <h2>Online IQ Test</h2>
         </div>
         <div class="timer-container">
           <div class="timer-display">
@@ -26,86 +22,64 @@
         </div>
       </nav>
       <div class="row">
-        <div class="col-md-6 mt-0 mb-5">
-          <div class="big-box col-md-6 mb-8">
+        <div class="col-12 col-md-8 col-lg-7">
+          <div class="big-box">
             <div class="question-content">
-              <label id="question-count" class="fw-semibold fs-4">Question 1/20</label>
-              <div class="fw-normal mt-3">
-                <h3 id="question-text" class="fw-semibold fs-4">Question:</h3>
-                <label class="fw-semibold fs-4">Options:</label><br />
-                <div id="options-container" class="radio fw-semibold fs-4"></div>
-                <div class="mark-checkbox">
+              <label id="question-count">Question 1/20</label>
+              <div>
+                <h3 id="question-text">Question:</h3>
+                <label>Options:</label><br />
+                <div id="options-container" class="radio"></div>
+                <div>
                   <input type="checkbox" name="mark" /> Mark
                 </div>
               </div>
             </div>
             <div class="btns">
-              <button id="prev-btn" type="button" class="next_btn fw-semibold fs-5">
-                <- Prev </button>
-                  <button id="next-btn" type="button" class="next_btn fw-semibold fs-5">
-                    Next ->
-                  </button>
+              <button id="prev-btn" type="button" class="next_btn">
+                &lt;- Prev
+              </button>
+              <button id="next-btn" type="button" class="next_btn">
+                Next ->
+              </button>
             </div>
           </div>
         </div>
-
-        <div class="right col-md-4 col-lg=4 mb-5">
-          <h4 class="qstatus">Question Status</h4>
-          <div class="button-grid mt-3">
-            <div class="button-row">
-              <button type="button" class="question-btn" id="btn1">1</button>
-              <button type="button" class="question-btn" id="btn2">2</button>
-              <button type="button" class="question-btn" id="btn3">3</button>
-              <button type="button" class="question-btn" id="btn4">4</button>
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="right">
+            <h4 class="qstatus">Question Status</h4>
+            <div class="button-grid">
+              <div class="button-row">
+                <button type="button" class="question-btn" id="btn1">1</button>
+                <button type="button" class="question-btn" id="btn2">2</button>
+                <button type="button" class="question-btn" id="btn3">3</button>
+                <button type="button" class="question-btn" id="btn4">4</button>
+              </div>
+              <div class="button-row">
+                <button type="button" class="question-btn" id="btn5">5</button>
+                <button type="button" class="question-btn" id="btn6">6</button>
+                <button type="button" class="question-btn" id="btn7">7</button>
+                <button type="button" class="question-btn" id="btn8">8</button>
+              </div>
+              <div class="button-row">
+                <button type="button" class="question-btn" id="btn9">9</button>
+                <button type="button" class="question-btn" id="btn10">10</button>
+                <button type="button" class="question-btn" id="btn11">11</button>
+                <button type="button" class="question-btn" id="btn12">12</button>
+              </div>
+              <div class="button-row">
+                <button type="button" class="question-btn" id="btn13">13</button>
+                <button type="button" class="question-btn" id="btn14">14</button>
+                <button type="button" class="question-btn" id="btn15">15</button>
+                <button type="button" class="question-btn" id="btn16">16</button>
+              </div>
+              <div class="button-row">
+                <button type="button" class="question-btn" id="btn17">17</button>
+                <button type="button" class="question-btn" id="btn18">18</button>
+                <button type="button" class="question-btn" id="btn19">19</button>
+                <button type="button" class="question-btn" id="btn20">20</button>
+              </div>
             </div>
-            <div class="button-row">
-              <button type="button" class="question-btn" id="btn5">5</button>
-              <button type="button" class="question-btn" id="btn6">6</button>
-              <button type="button" class="question-btn" id="btn7">7</button>
-              <button type="button" class="question-btn" id="btn8">8</button>
-            </div>
-            <div class="button-row">
-              <button type="button" class="question-btn" id="btn9">9</button>
-              <button type="button" class="question-btn" id="btn10">
-                10
-              </button>
-              <button type="button" class="question-btn" id="btn11">
-                11
-              </button>
-              <button type="button" class="question-btn" id="btn12">
-                12
-              </button>
-            </div>
-            <div class="button-row">
-              <button type="button" class="question-btn" id="btn13">
-                13
-              </button>
-              <button type="button" class="question-btn" id="btn14">
-                14
-              </button>
-              <button type="button" class="question-btn" id="btn15">
-                15
-              </button>
-              <button type="button" class="question-btn" id="btn16">
-                16
-              </button>
-            </div>
-            <div class="button-row">
-              <button type="button" class="question-btn" id="btn17">
-                17
-              </button>
-              <button type="button" class="question-btn" id="btn18">
-                18
-              </button>
-              <button type="button" class="question-btn" id="btn19">
-                19
-              </button>
-              <button type="button" class="question-btn" id="btn20">
-                20
-              </button>
-            </div>
-          </div>
-          <div class="row mt-5">
             <button type="submit" class="submit-btn" id="submit">SUBMIT TEST</button>
           </div>
         </div>
@@ -114,5 +88,4 @@
   </div>
   <script src="exam.js"></script>
 </body>
-
 </html>
