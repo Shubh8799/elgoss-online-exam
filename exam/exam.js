@@ -70,7 +70,8 @@ function showPreviousQuestion() {
     }
 }
 
-let btn=document.getElementById("submit");
-btn.onclick=()=>{
-    window.location.href="/submitted/result.html";
+function jump()
+{
+    //let btn=document.querySelector(".submit-btn");
+    window.location.href="/Submitted/index.html";
 }
