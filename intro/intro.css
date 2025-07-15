@@ -38,7 +38,7 @@ body {
   .left {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-     border-right: 6px solid rgb(196, 196, 196);
+     border-right: 6px solid #c4c4c4;
     border-right: none;
   }
 }
