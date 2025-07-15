@@ -90,5 +90,5 @@ function showPreviousQuestion() {
 
 let btn=document.getElementById("YES");
 btn.onclick=()=>{
-    window.location.href="/submitted/result.html";
+    window.location.href="/result/result.html";
 }
