@@ -1,0 +1,80 @@
+body{
+      background-color: azure;
+      overflow: hidden;
+}
+.container-fulied {
+  background-color: azure;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+
+}
+.img img {
+  width: 4em;
+  height: 4em;
+  object-fit: contain;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 269px;
+  background-color: azure;
+  height: 75px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.left{
+     background-color: white;
+    /* margin-right: 30px; */
+    border-radius: 10px;
+    padding: 20px 20px 20px 30px;
+    height: 350px;
+    margin-left: 20px;
+    border-right: 6px solid #c4c4c4;
+     box-shadow: 5px 5px 8px lightblue;
+   
+}
+.right{
+    background-color:white;
+    border-radius: 10px;
+    height: 568px;
+    padding-top: 20px;
+    padding: 20px 30px;
+    overflow: auto;
+    margin-bottom: 10px; 
+    box-shadow: 5px 5px 8px lightblue;
+
+}
+.container{
+    margin-top: 20px;
+  background-color: rgb(11, 11, 66);
+   margin-bottom: 20px;
+   
+    
+}
+.btn{
+  margin-left: 30px;
+  width: 250px;
+  
+}
+.small{
+    margin-left: 30px;
+}
+.card{
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.nav{
+    color: white;
+}
+.result{
+    width: 150px;
+}

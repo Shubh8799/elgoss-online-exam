@@ -70,7 +70,25 @@ function showPreviousQuestion() {
     }
 }
 
-let btn=document.getElementById("submit");
+// model popup
+
+ const submit = document.getElementById("submit");
+      const container = document.getElementById("container");
+      const YES = document.getElementById("YES");
+       const no = document.getElementById("no");
+      submit.addEventListener("click", () => {
+        model_container.classList.add("show");
+      });
+      YES.addEventListener("click", () => {
+        model_container.classList.remove("show");
+      });
+       no.addEventListener("click", () => {
+        model_container.classList.remove("show");
+      });
+
+
+
+let btn=document.getElementById("YES");
 btn.onclick=()=>{
-    window.location.href="/submitted/result.html";
+    window.location.href="/result/result.html";
 }
