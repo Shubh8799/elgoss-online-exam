@@ -1,14 +1,11 @@
-
 .container-fulied {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color:azure;
+  background-color: azure;
   color: rgb(0, 0, 0);
   padding: 20px;
- 
-
 }
 
 .row {
@@ -17,9 +14,8 @@
   /* Additions for centering and vertical alignment */
   align-items: center; /* Aligns items vertically in the center */
   justify-content: center; /* Aligns items horizontally in the center */
- /* Ensures the row takes at least the full viewport height */
- gap: 20px;
- 
+  /* Ensures the row takes at least the full viewport height */
+  gap: 20px;
 }
 .img img {
   width: 4em;
@@ -30,18 +26,18 @@ nav {
   display: flex;
   justify-content: space-evenly;
   gap: 269px;
-  background-color:azure;
-
+  background-color: azure;
+  height: 75px;
   font-family: Arial, sans-serif;
-  
 }
 
 .timer-container {
-  padding: 30px 15px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px lightblue;
-  margin: 8px;
+padding: 10px 28px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px lightblue;
+    margin: 8px;
 }
+
 
 .timer-display {
   font-size: 2em;
@@ -51,11 +47,10 @@ nav {
   color: #0094bd;
 }
 
-
 .big-box {
   background-color: white;
   max-width: 900px;
-  width: 800px;
+  width: 700px;
   height: 550px; /* This height will be matched by 'right' */
   margin-left: 30px;
   color: black;
@@ -64,7 +59,7 @@ nav {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-   box-shadow: 5px 5px 8px lightblue;
+  box-shadow: 5px 5px 8px lightblue;
 }
 
 .question-content {
@@ -78,9 +73,8 @@ nav {
   padding: 15px;
   flex-shrink: 0;
 }
-.btns:hover{
-      border-top: 1px solid gray;
-    
+.btns:hover {
+  border-top: 1px solid gray;
 }
 
 .next_btn {
@@ -93,10 +87,9 @@ nav {
   background-color: #0000ff;
   color: #fff;
 }
-.next_btn:hover{
-    background-color: oklch(34.66% 0.24022 264.073);
+.next_btn:hover {
+  background-color: oklch(34.66% 0.24022 264.073);
 }
-
 
 .radio {
   margin-left: 90px;
@@ -110,8 +103,8 @@ input[type="radio"] {
 
 .mark-checkbox {
   position: absolute;
-    right: 25em; 
-    bottom: 7.9em;
+  right: 25em;
+  bottom: 7.9em;
   font-size: 25px;
 }
 
@@ -127,7 +120,7 @@ input[type="radio"] {
   height: 550px;
   padding: 20px;
   width: 25%;
- border-left: 6px solid rgb(196, 196, 196);
+  border-left: 6px solid rgb(196, 196, 196);
   box-shadow: 5px 5px 8px lightblue;
 }
 
@@ -193,62 +186,59 @@ input[type="radio"] {
 
 .submit-btn:hover {
   background-color: #218838;
-} 
+}
 /* model popup */
 .model_container {
-        background-color: rgba(0, 255, 26, 0.3);
-        position: fixed;
-        opacity: 0;
-        width: 100vw;
-        height: 100%;
-        pointer-events: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        left: 0;
-      }
-      .model_container.show {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .mdl {
-        background-color: rgb(0, 98, 98);
-        color: #edeef6;
-        border: 0;
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        padding: 9px 25px;
-        font-size: 14px;
-      }
-      .model {
-        background-color: aliceblue;
-        padding: 30px 50px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        width: 500px;
-        max-width: 100%;
-        text-align: center;
-      }
-      .model p {
-        opacity: 0.7;
-        font-size: 18px;
-      }
-
-
-     progress {
-        border: 2px solid grey;
-        width: 42em;
-        height: 1.3em;
-        border-radius: 20px;
-        overflow: hidden;
-        
+  background-color: rgba(0, 255, 26, 0.3);
+  position: fixed;
+  opacity: 0;
+  width: 100vw;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
 }
-    progress::-webkit-progress-bar {
-        background-color: rgb(199, 199, 199);
-    }
-    progress::-webkit-progress-value {
-        background-color: #001aff;
-        transition: all 0.2s;
-       
+.model_container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mdl {
+  background-color: rgb(0, 98, 98);
+  color: #edeef6;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 9px 25px;
+  font-size: 14px;
+}
+.model {
+  background-color: aliceblue;
+  padding: 30px 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+}
+.model p {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+progress {
+  border: 2px solid grey;
+  width: 38em;
+  height: 1.3em;
+  border-radius: 20px;
+  overflow: hidden;
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(199, 199, 199);
+}
+progress::-webkit-progress-value {
+  background-color: #001aff;
+  transition: all 0.2s;
 }
