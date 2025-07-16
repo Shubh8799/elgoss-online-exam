@@ -1,8 +1,8 @@
 body{
       background-color: azure;
-      overflow: hidden;
+      /* overflow: hidden; */
 }
-.container-fulied {
+.container-fluid{
   background-color: azure;
   color: rgb(0, 0, 0);
   padding: 20px;
@@ -22,30 +22,32 @@ body{
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
-  gap: 269px;
-  background-color: azure;
-  height: 75px;
-  font-family: Arial, sans-serif;
+    justify-content: center; 
+    align-items: center; 
+    background-color: azure;
+    height: 75px;
+    font-family: Arial, sans-serif;
+    padding: 0 15px;
 }
-
 
 
 .left{
-     background-color: white;
-    /* margin-right: 30px; */
+         background-color: white;
     border-radius: 10px;
-    padding: 20px 20px 20px 30px;
-    height: 350px;
-    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+    min-height: 250px;
     border-right: 6px solid #c4c4c4;
-     box-shadow: 5px 5px 8px lightblue;
-   
+    box-shadow: 5px 5px 8px lightblue;
+    /* margin-bottom: 220px; */
+    /* margin-left: 60px; */
+    width: 24em;
+    height: 23em;
 }
+
 .right{
     background-color:white;
     border-radius: 10px;
-    height: 568px;
+   height: 588px;
     padding-top: 20px;
     padding: 20px 30px;
     overflow: auto;
@@ -77,4 +79,13 @@ nav {
 }
 .result{
     width: 150px;
+}
+@media (max-width: 767.98px) {
+    .left {
+        border-right: none; 
+        border-bottom: 6px solid #c4c4c4; 
+        margin-left: 0;
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
 }
